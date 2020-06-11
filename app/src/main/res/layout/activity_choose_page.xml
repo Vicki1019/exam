@@ -63,4 +63,14 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
 
+    <Button
+        android:id="@+id/cbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:text="檢視成績"
+        app:layout_constraintBottom_toBottomOf="@+id/bg1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

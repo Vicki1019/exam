@@ -1,14 +1,13 @@
 package tw.edu.pu.s1071930.exam;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.media.Image;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ChoosePage extends AppCompatActivity {
 
@@ -39,6 +38,15 @@ public class ChoosePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(ChoosePage.this, ColorGame.class);
+                startActivity(it);
+                finish();
+            }
+        });
+        Button cbtn = (Button) findViewById(R.id.cbtn);
+        cbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(ChoosePage.this, CheckGrade.class);
                 startActivity(it);
                 finish();
             }

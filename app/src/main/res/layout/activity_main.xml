@@ -17,9 +17,11 @@
         android:id="@+id/hp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/homepage"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homepage" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -29,20 +31,22 @@
         app:layout_constraintGuide_percent="0.42" />
 
     <EditText
-        android:id="@+id/ad"
+        android:id="@+id/id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <EditText
-        android:id="@+id/pw"
+        android:id="@+id/pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="34dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
@@ -59,7 +63,9 @@
         android:text="註冊"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:onClick="WriteData"
+        />
 
     <Button
         android:id="@+id/btn2"
@@ -69,6 +75,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="8dp"
         android:background="#FFDC35"
+        android:onClick="ReadData"
         android:text="登入"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn1"
